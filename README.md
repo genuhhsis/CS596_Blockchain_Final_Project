@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# Blockchain Connect4 Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A decentralized implementation of the classic Connect4 game using blockchain technology. This project demonstrates how smart contracts can enable trustless gaming experiences with complete transparency and fairness.
 
-## Available Scripts
+**Live Demo(Deployed Website)**: [Play Blockchain Connect4](https://gilded-crepe-8a7bda.netlify.app/)
 
-In the project directory, you can run:
+![Connect4 Game Screenshot](screenshot.png)
 
-### `npm start`
+## Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This decentralized Connect4 game was created as a final project for CS596: Fundamentals of Cryptography with Applications to Blockchain, taught by Professor Li at San Diego State University.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+By implementing this classic game on the blockchain, I've created a fully transparent, decentralized gaming experience that demonstrates the power of smart contracts for trustless interaction between players.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Fully On-chain Gameplay**: All game logic runs on the blockchain
+- **Player Matchmaking**: Find opponents automatically or create custom games
+- **Timeout Mechanism**: Claim wins if opponents abandon games
+- **Transparent Rules**: All game mechanics enforced by smart contracts
+- **Intuitive Interface**: Easy-to-use frontend built with React
+- **Real-time Updates**: Game state automatically refreshes
 
-### `npm run build`
+## Technology Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Smart Contract (Backend)
+- Written in Solidity
+- Deployed on the MegaETH testnet
+- Contract address: `0x12d7c64faC971734a1BF39cD4Ba03e02Efa564B9`
+- Features:
+  - 7x6 game grid represented as a flattened array for gas efficiency
+  - Player matchmaking system
+  - Move validation and win detection (horizontal, vertical, diagonal)
+  - Timeout mechanisms for inactive players
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Frontend Application
+- Built with React.js and ethers.js
+- Responsive design for various devices
+- Real-time game state visualization
+- Player dashboard with game metrics
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How to Play
 
-### `npm run eject`
+### Prerequisites
+- MetaMask wallet installed in your browser
+- MegaETH testnet configured in your MetaMask (Chain ID: 6342)
+- Some MegaETH tokens for gas fees
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Getting Started
+1. Visit [the game website](https://gilded-crepe-8a7bda.netlify.app/)
+2. Connect your MetaMask wallet when prompted
+3. Make sure you're on the MegaETH testnet
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Game Rules
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Creating a Game**:
+   - Set your desired timeout period (minimum 60 seconds)
+   - Click "Create Game" to start a new game
+   - Wait for an opponent to join, or share your game ID
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Joining a Game**:
+   - Browse available games in the lobby
+   - Click "Join" next to any available game
+   - Alternatively, use "Auto Matchmaking" to join existing games or create a new one
 
-## Learn More
+3. **Making Moves**:
+   - Take turns dropping discs into the grid columns
+   - Wait for blockchain confirmation between moves
+   - First player to connect four discs in a line (horizontal, vertical, diagonal) wins
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Timeout System**:
+   - If your opponent doesn't make a move within the timeout period
+   - The timeout bar will fill completely
+   - A "Claim Win by Timeout" button will appear
+   - Click to claim your win
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. **Game Outcomes**:
+   - **Win**: Connect four discs in a row
+   - **Timeout Win**: Opponent fails to move within timeout period
+   - **Draw**: Board fills with no winner
 
-### Code Splitting
+## Blockchain Aspects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Unlike traditional online games, this blockchain implementation offers:
 
-### Analyzing the Bundle Size
+- **Decentralization**: No single point of failure or control
+- **Transparency**: All game rules and outcomes are visible and verifiable
+- **Immutability**: Game history cannot be altered once recorded
+- **Trustless Interaction**: No need to trust a central authority
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Local Development
 
-### Making a Progressive Web App
+### Prerequisites
+- Node.js and npm
+- Hardhat for smart contract development
+- MetaMask for testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Setup
+1. Clone the repository
+   ```
+   git clone https://github.com/yourusername/blockchain-connect4.git
+   cd blockchain-connect4
+   ```
 
-### Advanced Configuration
+2. Install dependencies
+   ```
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. Start local development server
+   ```
+   npm start
+   ```
 
-### Deployment
+## About the Developer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+I'm Genesis Anne Villar, a 4th year Undergraduate Computer Science student at San Diego State University with a passion for gaming and innovative technologies. I'm constantly looking to expand my skillset and explore new applications of emerging technologies.
 
-### `npm run build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT License](LICENSE)
+
+## Acknowledgements
+
+- Prof. Li for guidance and support throughout the CS596 course
+- Classmates who provided feedback and testing
+- The Ethereum and web3 communities for documentation and examples
+
+---
+
+© 2023 Genesis Anne Villar | [GitHub](https://github.com/genuhhsis)

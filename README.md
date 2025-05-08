@@ -4,7 +4,18 @@ A decentralized implementation of the classic Connect4 game using blockchain tec
 
 **Live Demo(Deployed Website)**: [Play Blockchain Connect4](https://gilded-crepe-8a7bda.netlify.app/)
 
-![Connect4 Game Screenshot](screenshot.png)
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="homepage1.png" width="400"></td>
+      <td><img src="homepage2.png" width="400"></td>
+    </tr>
+    <tr>
+      <td><img src="homepage3.png" width="400"></td>
+      <td><img src="homepage4.png" width="400"></td>
+    </tr>
+  </table>
+</div>
 
 ## Project Overview
 

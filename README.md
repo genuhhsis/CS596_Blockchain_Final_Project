@@ -34,7 +34,7 @@ By implementing this classic game on the blockchain, I've created a fully transp
 
 ## Technology Stack
 
-### Smart Contract (Backend)
+### Smart Contract (BackEnd)
 - Written in Solidity
 - Deployed on the MegaETH testnet
 - Contract address: `0x12d7c64faC971734a1BF39cD4Ba03e02Efa564B9`

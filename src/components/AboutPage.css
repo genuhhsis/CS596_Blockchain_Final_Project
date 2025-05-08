@@ -1,0 +1,90 @@
+/* src/components/AboutPage.css */
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.about-container h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.about-section {
+  margin-bottom: 30px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.about-section h2 {
+  color: #3498db;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.about-section p {
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.about-section ul {
+  margin-left: 20px;
+}
+
+.about-section li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.about-section code {
+  background-color: #f0f0f0;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 90%;
+}
+
+.github-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.github-link a {
+  color: #3498db;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid #3498db;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.github-link a:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+.back-button {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #2980b9;
+}

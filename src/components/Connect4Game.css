@@ -1,0 +1,427 @@
+.connect4-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  background-color: transparent;
+  border: none;
+  color: #3498db;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+.nav-link:hover {
+  background-color: rgba(52, 152, 219, 0.1);
+  text-decoration: underline;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #2980b9;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+.title-section {
+  text-align: left;
+}
+
+.main-title {
+  font-size: 28px;
+  margin: 0 0 5px 0;
+  color: #2c3e50;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  justify-self: center;
+}
+
+.account-info {
+  padding: 8px 12px;
+  background-color: #ecf0f1;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #34495e;
+  justify-self: end;
+}
+
+.message-bar {
+  background-color: #f8f9fa;
+  border-left: 4px solid #3498db;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #7f8c8d;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-controls {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.game-status {
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.loading-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-container {
+  background-color: #ffdddd;
+  border-left: 6px solid #f44336;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.error-container h2 {
+  color: #d32f2f;
+  margin-top: 0;
+}
+
+.error-container button {
+  margin-top: 15px;
+}
+
+.timeout-info {
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  border-left: 4px solid #3498db;
+}
+
+.timeout-button {
+  padding: 8px 15px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.timeout-button.available {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.timeout-button.unavailable {
+  background-color: #ecf0f1;
+  color: #7f8c8d;
+  cursor: not-allowed;
+}
+
+.timeout-timer {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+/* New Game Dashboard Styles */
+.game-dashboard {
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+}
+
+.game-dashboard h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.dashboard-section {
+  margin-bottom: 20px;
+}
+
+.dashboard-section h4 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.player-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.player-row:first-of-type {
+  background-color: rgba(231, 76, 60, 0.1);
+}
+
+.player-row:last-of-type {
+  background-color: rgba(241, 196, 15, 0.1);
+}
+
+.player-chip {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 12px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+}
+
+.player-chip.player1 {
+  background-color: #e74c3c;
+}
+
+.player-chip.player2 {
+  background-color: #f1c40f;
+}
+
+.player-info {
+  flex: 1;
+}
+
+.player-role {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.player-address {
+  font-size: 12px;
+  color: #7f8c8d;
+}
+
+.piece-count {
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #eee;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-row span:first-child {
+  font-weight: 500;
+  color: #7f8c8d;
+}
+
+.info-row span:last-child {
+  font-family: monospace;
+}
+
+.state-indicator {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.your-turn {
+  color: #27ae60;
+  background-color: rgba(39, 174, 96, 0.1);
+}
+
+.opponent-turn {
+  color: #e67e22;
+  background-color: rgba(230, 126, 34, 0.1);
+}
+
+.waiting {
+  color: #3498db;
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+.game-ended {
+  color: #7f8c8d;
+  background-color: rgba(127, 140, 141, 0.1);
+}
+
+.moves-made {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Update button style in dashboard */
+.dashboard-section .button-container {
+  margin-top: 10px;
+}
+
+.dashboard-section .timeout-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.dashboard-section .timeout-button:hover {
+  background-color: #c0392b;
+}
+
+/* New styles for timeout progress bar */
+.dashboard-timeout {
+  padding: 12px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.timeout-progress {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.timeout-label {
+  font-weight: 500;
+  color: #34495e;
+}
+
+.timeout-value {
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.timeout-bar-container {
+  height: 8px;
+  background-color: #ecf0f1;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.timeout-bar {
+  height: 100%;
+  transition: width 1s linear;
+}
+
+/* Enhanced animations for timeout bar */
+@keyframes pulse-warning {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+.timeout-bar.warning {
+  animation: pulse-warning 1.5s infinite;
+}
+
+/* New styles for the Blockchain Maintenance section */
+.admin-info {
+  font-size: 13px;
+  color: #7f8c8d;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.cleanup-button {
+  background-color: #8e44ad;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.cleanup-button:hover {
+  background-color: #9b59b6;
+}
+
+.cleanup-button:active {
+  background-color: #7d3c98;
+}

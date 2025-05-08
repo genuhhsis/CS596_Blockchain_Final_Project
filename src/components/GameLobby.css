@@ -1,0 +1,139 @@
+.game-lobby {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.lobby-section {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lobby-section h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.input-group label {
+  margin-right: 10px;
+  min-width: 180px;
+}
+
+.input-group input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100px;
+}
+
+.input-with-guidance {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-guidance {
+  font-size: 12px;
+  color: #e74c3c;
+  margin-top: 4px;
+  font-style: italic;
+}
+
+/* New layout for the lobby actions */
+.lobby-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Cleanup button styles */
+.cleanup-button {
+  background-color: #8e44ad;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.cleanup-button:hover {
+  background-color: #9b59b6;
+}
+
+.cleanup-button:active {
+  background-color: #7d3c98;
+}
+
+.game-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.game-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #eee;
+}
+
+.game-item span {
+  font-weight: 500;
+}
+
+.no-games {
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 600px) {
+  .lobby-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .button-group {
+    width: 100%;
+  }
+  
+  .cleanup-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

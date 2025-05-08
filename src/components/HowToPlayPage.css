@@ -1,0 +1,74 @@
+/* src/components/HowToPlayPage.css */
+.howto-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.howto-container h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.howto-section {
+  margin-bottom: 30px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.howto-section h2 {
+  color: #3498db;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.howto-section h3 {
+  color: #34495e;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.howto-section p {
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.howto-section ul, .howto-section ol {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.howto-section li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.howto-section strong {
+  color: #2c3e50;
+}
+
+.back-button {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #2980b9;
+}

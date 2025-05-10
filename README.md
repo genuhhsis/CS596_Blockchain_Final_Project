@@ -104,7 +104,7 @@ Unlike traditional online games, this blockchain implementation offers:
 ### Prerequisites
 - Node.js and npm
 - Hardhat for smart contract development
-- MetaMask for testing
+- MetaMask for testing (IMPORTANT OTHERWISE WILL NOT WORK WITH OTHER TESTCOINS)
 
 ### Setup
 1. Clone the repository

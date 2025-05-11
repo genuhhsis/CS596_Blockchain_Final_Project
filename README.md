@@ -17,6 +17,11 @@ A decentralized implementation of the classic Connect4 game using blockchain tec
   </table>
 </div>
 
+## Documentation
+
+📺 **Video Demonstration**: [Watch on YouTube](https://www.youtube.com/watch?v=c88FVhDqRFs)  
+📄 **Project Report**: [View Full Report (PDF)]((VILLAR)CS596%20FINAL%20PROJECT_%20REPORT.pdf)
+
 ## Project Overview
 
 This decentralized Connect4 game was created as a final project for CS596: Fundamentals of Cryptography with Applications to Blockchain, taught by Professor Li at San Diego State University.

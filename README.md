@@ -4,6 +4,11 @@ A decentralized implementation of the classic Connect4 game using blockchain tec
 
 **Live Demo(Deployed Website)**: [Play Blockchain Connect4](https://gilded-crepe-8a7bda.netlify.app/)
 
+## Documentation
+
+📺 **Video Demonstration**: [Watch on YouTube](https://www.youtube.com/watch?v=c88FVhDqRFs)  
+📄 **Project Report**: [View Full Report (PDF)]((VILLAR)CS596%20FINAL%20PROJECT_%20REPORT.pdf)
+
 <div align="center">
   <table>
     <tr>
@@ -16,11 +21,6 @@ A decentralized implementation of the classic Connect4 game using blockchain tec
     </tr>
   </table>
 </div>
-
-## Documentation
-
-📺 **Video Demonstration**: [Watch on YouTube](https://www.youtube.com/watch?v=c88FVhDqRFs)  
-📄 **Project Report**: [View Full Report (PDF)]((VILLAR)CS596%20FINAL%20PROJECT_%20REPORT.pdf)
 
 ## Project Overview
 
